@@ -184,23 +184,30 @@ class Agent(object):
             R (1-D Array): `reward` array of shape (n_samples,)
                 A reward is given after each action.
         
-        TODO:
-        Compute discounted return (use self.compute_discounted_R()) for each action in step
-        Compute value of state in each step
-        Use these two quantities to compute the advantage of action in each step
         """
         action_onehot = np_utils.to_categorical(A, num_classes=self.output_dim)
-
+        discounted_return = self.compute_discounted_R(R)
         # ---- YOUR CODE HERE -----
+        # You have the discounted return of each action in each step -- line 189
+        # You need to:
+        # Compute value of state in each step
+        # Use these two quantities to compute the advantage of action in each step
+
+        
+
+
 
         # -------------------------
-        
+
         assert S.shape[1] == self.input_dim, "{} != {}".format(S.shape[1], self.input_dim)
         assert action_onehot.shape[0] == S.shape[0], "{} != {}".format(action_onehot.shape[0], S.shape[0])
         assert action_onehot.shape[1] == self.output_dim, "{} != {}".format(action_onehot.shape[1], self.output_dim)
         assert len(discounted_return.shape) == 1, "{} != 1".format(len(discounted_return.shape))
+        assert len(advantage.shape) == 1, "{} != 1".format(len(advantage.shape))
 
+        # The returns are used to train the value/baseline function
         self.baseline_train_fn([S, discounted_return])
+        # The advantages are to be used instead of discounted returns to train policy
         self.policy_train_fn([S, action_onehot, advantage])
 
 def train_on_episode(env, agent):
