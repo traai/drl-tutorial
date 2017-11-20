@@ -1,0 +1,41 @@
+Value based methods:
+1. Try another environment/task from OpenAI Gym
+2. Play with value network architecture (e.g. add or reduce layers/layer sizes)
+3. Try prioritised sampling from replay buffer: https://arxiv.org/pdf/1511.05952.pdf
+Hint. You can try to plug in the prioritised experience replay code from OpenAI baselines.
+4. Try a dueling network architecture: https://arxiv.org/pdf/1511.06581.pdf
+5. Try selecting assumed optimal (argmax) action using online net and evaluating it using target net to create the loss target given by Bellman optimality equation: https://arxiv.org/pdf/1509.06461.pdf (double DQN)
+Extra challenge:
+6. Try putting prioritised sampling, dueling architecture, and double Q learning together.
+
+Policy based methods:
+1. Try another environment/task from OpenAI Gym
+2. Play with policy network architecture
+3. Try returns with and without discounting
+4. Try including a baseline, e.g. a separate value function (advantage function)
+5. Try using same network for policy and value/baseline
+Extra challenge:
+6. Try changing the loss/objective function to make policy updates proximal: https://arxiv.org/pdf/1707.06347.pdf
+
+Actor-critic:
+1. Try including bootstrapping in returns (use value function as critic but not baseline)
+2. Try using value function as critic and as a baseline
+
+Rules:
+Consider this as an open book hackathon. Work your way through the exercises above with your neighbour or by yourself. If something is not clear, ask me.
+
+Basic value and policy based method code and environment setup is provided. Go through it and see if you understand everything well. If not, ask questions. Build on top of it as you go through the above exercises, or implement your own from scratch. 
+
+Refer online lectures, blog posts, available code etc. Ask me.
+
+Best practices: https://www.youtube.com/watch?v=8EcdaCk9KaQ&feature=youtu.be
+	Slides: https://drive.google.com/file/d/0BxXI_RttTZAhc2ZsblNvUHhGZDA/view
+	Quick notes: https://github.com/williamFalcon/DeepRLHacks
+Deep RL Bootcamp (must watch!): https://sites.google.com/view/deep-rl-bootcamp/lectures
+More best practices: https://blog.openai.com/openai-baselines-dqn/
+Policy gradients intuition: http://karpathy.github.io/2016/05/31/rl/
+Online tutorials with code samples: https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-0-q-learning-with-tables-and-neural-networks-d195264329d0
+
+Use Slack freely during/after lecture to discuss issues and share thoughts on your implementations.
+
+Have fun.
