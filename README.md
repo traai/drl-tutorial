@@ -31,11 +31,11 @@ Code accompanying a lecture series on Deep Reinforcement Learning at NTNU: https
 
 # Tasks
 
-## Value based methods
+## [Value based methods](https://github.com/traai/drl-tutorial/tree/master/value)
 
-1. Try **another RL environment/task** e.g. by changing size of state space for the catching problem, or from [OpenAI Gym](https://gym.openai.com/envs/) 
+1. Try **another RL environment/task** with the DQN implementation in `dqn.py` e.g. by changing size of state space for the **catch** problem, or from [OpenAI Gym](https://gym.openai.com/envs/) 
 
-2. Play with **value network architecture** (e.g. add or reduce layers/layer sizes)
+2. Play with the **value network architecture** (e.g. add or reduce layers/layer sizes)
 
 3. Note that the **basic implementation has only one network**. Let's call it the online net. It is used to collect data as well as to compute targets in the `compute_targets` function. For easy problems, this can be fine. But for Atari, this will cause the computed targets to move in detrimental ways. Can you **implement a second network**, which you use **to compute targets**. It should be a clone of the online net (same architecture). Let's call it the target network. Parameters of online and target network should be **synced** at regular intervals ~ target network will be **frozen** between intervals. [Here (slide 6)](https://drive.google.com/file/d/0BxXI_RttTZAhVUhpbDhiSUFFNjg/view) is some intuition on this -- accompanying [video](https://www.youtube.com/watch?v=fevMOp5TDQs). 
 
@@ -53,10 +53,10 @@ Code accompanying a lecture series on Deep Reinforcement Learning at NTNU: https
 
 7. Try putting prioritised sampling, dueling architecture, and double DQN learning together!
 
-## Policy based methods
-1. Try **another RL environment/task** e.g. from [OpenAI Gym](https://gym.openai.com/envs/)
+## [Policy based methods](https://github.com/traai/drl-tutorial/tree/master/pg)
+1. Try **another RL environment/task** e.g. from [OpenAI Gym](https://gym.openai.com/envs/), with the simple policy gradient algorithm implementation in `pg.py`.
 
-2. Play with **policy network architecture**.
+2. Play with the **policy network architecture**.
 
 3. Try returns **with and without discounting**. Do gradients become more noisy without discounting? Does it take longer to train to get the same performance as with discounting?
 
