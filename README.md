@@ -6,6 +6,8 @@ Code accompanying a lecture series on Deep Reinforcement Learning at NTNU: https
 ## Setting up your machine to run/play with code in this repo
 
 1. Get __Python 3.6__ version of [__Anaconda__](https://www.anaconda.com/download/)
+
+### On a Mac/(Linux?)
 2. Run the following commands to set up Python environment
 	* `conda create --name <envname> python=3`
 	* `source activate <envname>`
@@ -14,4 +16,13 @@ Code accompanying a lecture series on Deep Reinforcement Learning at NTNU: https
 	* `pip install --upgrade tensorflow`
 	* `pip install keras`
 	* `pip install h5py`
-3. Hack.
+
+### On Win:
+2. Run the following commands to set up Python environment
+	* `conda create --name <envname> python=3`
+	* `activate <envname>`
+	* `conda install matplotlib`
+	* `pip install gym`
+	* `pip install --upgrade tensorflow`
+	* `pip install keras`
+	* `pip install h5py`
