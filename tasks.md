@@ -31,7 +31,7 @@
 
 ### Extra challenges:
 
-4. Full episode returns are called Monte Carlo returns. These have high variance. Discounting helps to some extent. But, gradients are still noisy, since returns modulate the gradients. Try including a baseline to reduce the variance in episodic returns. This can be done (**already done for you in** `pg_with_baseline.py`**!**) by setting up another network that outputs the value (expected return) of a state. Can you use it to **compute the advantages**, as opposed to full returns. Then you can you the advantages to modulate the gradients!
+4. Full episode returns are called Monte Carlo returns. These have high variance. Discounting helps to some extent. But, gradients are still noisy, since returns modulate the gradients. Try including a baseline to reduce the variance in episodic returns. This can be done (**already done for you in** `pg_with_baseline_task.py`**!**) by setting up another network that outputs the value (expected return) of a state. Can you use it to **compute the advantages**, as opposed to full returns. Then you can you the advantages to modulate the gradients! Solution in `pg_with_baseline.py`, but try figuring it out yourself first to see if you get the concept of baselines and action advantages.
 
 5. Try using same network for policy and value/baseline. **Hint**: Last but one layer (before output) can have **two heads**, one giving the policy and other giving value. A single loss function (summed) for both can also be constructed, to compute gradients more efficiently. 
 
