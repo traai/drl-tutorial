@@ -1,7 +1,7 @@
 # Tutorial Series on Deep Reinforcement Learning
 Code accompanying a lecture series on Deep Reinforcement Learning at NTNU: https://www.ntnu.edu/web/ailab/dl_tutorial
 
-[!](https://github.com/traai/drl-tutorial/blob/master/images/drl-tutorial.png?raw=true)
+![](https://github.com/traai/drl-tutorial/blob/master/images/drl-tutorial.png?raw=true)
 
 ## Setting up your machine to run/play with code in this repo
 
