@@ -4,7 +4,7 @@ matplotlib.use('TkAgg')
 import matplotlib.pyplot as plt
 import numpy as np
 from keras.models import model_from_json
-from dqn_catcher import Catch
+from catch import *
 import time
 
 plt.ion()
@@ -21,7 +21,7 @@ if __name__ == "__main__":
     # Define environment, game
     env = Catch(grid_size)
     c = 0
-    for e in range(1):
+    for e in range(5):
         loss = 0.
         env.reset()
         game_over = False
@@ -35,7 +35,7 @@ if __name__ == "__main__":
 
         c += 1
         while not game_over:
-            time.sleep(.5)
+            # time.sleep(.5)
             input_tm1 = input_t
 
             # get next action

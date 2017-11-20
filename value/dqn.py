@@ -61,7 +61,7 @@ if __name__ == "__main__":
     # Parameters
     epsilon = .1  # Exploration
     num_actions = 3  # [move_left, stay, move_right]
-    epoch = 300 # Number of episodes in this case
+    epoch = 1000 # Number of episodes in this case
     max_memory = 500 # Max replay memory size
     hidden_size = 100 # Size of the hidden layers. NB. Can of course have different number of neurons per layer.
     batch_size = 50
