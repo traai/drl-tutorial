@@ -33,7 +33,7 @@ Code accompanying a lecture series on Deep Reinforcement Learning at NTNU: https
 
 ## Value based methods
 
-1. Try **another environment/task** e.g. by changing size of state space for the catching problem, or from [OpenAI Gym](https://gym.openai.com/envs/) 
+1. Try **another RL environment/task** e.g. by changing size of state space for the catching problem, or from [OpenAI Gym](https://gym.openai.com/envs/) 
 
 2. Play with **value network architecture** (e.g. add or reduce layers/layer sizes)
 
@@ -54,7 +54,7 @@ Code accompanying a lecture series on Deep Reinforcement Learning at NTNU: https
 7. Try putting prioritised sampling, dueling architecture, and double DQN learning together!
 
 ## Policy based methods
-1. Try **another environment/task** e.g. from [OpenAI Gym](https://gym.openai.com/envs/)
+1. Try **another RL environment/task** e.g. from [OpenAI Gym](https://gym.openai.com/envs/)
 
 2. Play with **policy network architecture**.
 
