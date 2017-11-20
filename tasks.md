@@ -8,7 +8,7 @@
 
 3. Note that the **basic implementation has only one network**. Let's call it the online net. It is used to collect data as well as to compute targets in the `compute_targets` function. For easy problems, this can be fine. But for Atari, this will cause the computed targets to move in detrimental ways. Can you **implement a second network**, which you use **to compute targets**. It should be a clone of the online net (same architecture). Let's call it the target network. Parameters of online and target network should be **synced** at regular intervals ~ target network will be **frozen** between intervals. Intuition on DQN: [https://drive.google.com/file/d/0BxXI_RttTZAhVUhpbDhiSUFFNjg/view]()
 
-###Extra challenges:
+### Extra challenges:
 
 4. Try **prioritised sampling** from the replay buffer: [https://arxiv.org/pdf/1511.05952.pdf](). **Hint**: You can try to plug in the [prioritised experience replay code from OpenAI baselines](https://github.com/openai/baselines/blob/master/baselines/deepq/replay_buffer.py).
 
@@ -16,7 +16,7 @@
 
 6. Try selecting assumed optimal (argmax) action using online net and evaluating it using target net to compute targets:[ https://arxiv.org/pdf/1509.06461.pdf]() (**double DQN**)
 
-###Very extra challenge:
+### Very extra challenge:
 
 * Try putting prioritised sampling, dueling architecture, and double Q learning together!
 
@@ -31,7 +31,7 @@
 
 5. Try using same network for policy and value/baseline. **Hint**: Last but one layer (before output) can have **two heads**, one giving the policy and other giving value. A single loss function (summed) for both can also be constructed, to compute gradients more efficiently. 
 
-###Very very extra challenge:
+### Very extra challenge:
 * Try changing the loss/objective function to make policy updates **proximal**: [https://arxiv.org/pdf/1707.06347.pdf](). Proximality here means that the updates to the network should change the policy such that the updated policy is not very different from this policy.
 
 ## Actor-critic
