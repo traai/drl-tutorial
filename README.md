@@ -95,7 +95,7 @@ More hints [here](https://github.com/keon/deep-q-learning/blob/master/ddqn.py), 
 
 5. Refer online lectures, blog posts, available code etc. Or ask.
 
-	* **Best practices** when working with deep RL
+	* **Best practices from John Schulman (OpenAI)** when working with deep RL
 		[Video](https://www.youtube.com/watch?v=8EcdaCk9KaQ&feature=youtu.be)
 		[Slides](https://drive.google.com/file/d/0BxXI_RttTZAhc2ZsblNvUHhGZDA/view) [Notes](https://github.com/williamFalcon/DeepRLHacks)
 
