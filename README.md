@@ -95,17 +95,23 @@ More hints [here](https://github.com/keon/deep-q-learning/blob/master/ddqn.py), 
 
 5. Refer online lectures, blog posts, available code etc. Or ask.
 
-	* **Best practices from John Schulman (OpenAI)** when working with deep RL
+	> **Best practices from John Schulman (OpenAI)** when working with deep RL
 		[Video](https://www.youtube.com/watch?v=8EcdaCk9KaQ&feature=youtu.be)
 		[Slides](https://drive.google.com/file/d/0BxXI_RttTZAhc2ZsblNvUHhGZDA/view) [Notes](https://github.com/williamFalcon/DeepRLHacks)
 
-	* [More best practices from OpenAI](https://blog.openai.com/openai-baselines-dqn/)
- 	* DQN [intuition](https://www.youtube.com/watch?v=fevMOp5TDQs) from **Vlad Mnih (Deepmind)**
-	* [Policy gradients](https://www.youtube.com/watch?v=tqrcjHuNdmQ) [intuition](http://karpathy.github.io/2016/05/31/rl/) from **Andrej Karpathy (Tesla)**
-	* [Some online tutorials](https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-0-q-learning-with-tables-and-neural-networks-d195264329d0) with code samples
-	* [Deep RL Bootcamp](https://sites.google.com/view/deep-rl-bootcamp/lectures) -- **must watch if you want to start working in the field!**
-	* Full [UCL course](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html) on RL by **David Silver (Deepmind)**
-	* Full [UC Berkeley course](http://rll.berkeley.edu/deeprlcourse/) on **Deep RL** 
+	> [More best practices from OpenAI](https://blog.openai.com/openai-baselines-dqn/)
+ 	
+ 	> DQN [intuition](https://www.youtube.com/watch?v=fevMOp5TDQs) from **Vlad Mnih (Deepmind)**
+	
+	> [Policy gradients](https://www.youtube.com/watch?v=tqrcjHuNdmQ) [intuition](http://karpathy.github.io/2016/05/31/rl/) from **Andrej Karpathy (Tesla)**
+	
+	> [Some online tutorials](https://medium.com/emergent-future/simple-reinforcement-learning-with-tensorflow-part-0-q-learning-with-tables-and-neural-networks-d195264329d0) with code samples
+	
+	> [Deep RL Bootcamp](https://sites.google.com/view/deep-rl-bootcamp/lectures) -- **must watch if you want to start working in the field!**
+	
+	> Full [UCL course](http://www0.cs.ucl.ac.uk/staff/d.silver/web/Teaching.html) on RL by **David Silver (Deepmind)**
+	
+	> Full [UC Berkeley course](http://rll.berkeley.edu/deeprlcourse/) on **Deep RL** 
 
 6. **Use Slack during/after lecture** to discuss issues and share thoughts on your implementations.
 
