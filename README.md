@@ -7,7 +7,7 @@ Code accompanying a lecture series on Deep Reinforcement Learning at NTNU: https
 
 1. Get __Python 3.6__ version of [__Anaconda__](https://www.anaconda.com/download/)
 
-### On a Mac/(Linux?)
+### On a Mac/(Linux?):
 2. Run the following commands to set up Python environment
 	* `conda create --name <envname> python=3`
 	* `source activate <envname>`
@@ -87,7 +87,7 @@ More hints [here](https://github.com/keon/deep-q-learning/blob/master/ddqn.py), 
 
 1. Consider this as an **open book challenge**. Work your way through the tasks in any order you like. 
 
-2. Team up with your neighbour or by yourself. If something is not clear, ask me.
+2. Team up with your neighbour or work through these by yourself. If something is not clear, ask me/Slack.
 
 3. Basic **implementations** of value and policy based methods, and the **environment setup instructions** are provided. Go through these and see if you understand everything well. If not, ask. 
 
