@@ -35,7 +35,7 @@ Code accompanying a lecture series on Deep Reinforcement Learning at NTNU: https
 
 ![](https://github.com/traai/drl-tutorial/blob/master/assets/catch.gif?raw=true)
 
-1. Try **another RL environment/problem** with the DQN implementation in `dqn.py` e.g. by changing size of state space for the **catch** problem, or from [OpenAI Gym](https://gym.openai.com/envs/) 
+1. Try **another RL environment/problem** with the DQN implementation in `dqn.py` e.g. by changing size of state space for the **catch** [problem](http://edersantana.github.io/articles/keras_rl/)), or from [OpenAI Gym](https://gym.openai.com/envs/) 
 
 2. Play with the **value network architecture** (e.g. add or reduce layers/layer sizes)
 
