@@ -1,7 +1,7 @@
 # Tutorial Series on Deep Reinforcement Learning
 Code accompanying a lecture series on Deep Reinforcement Learning at NTNU: https://www.ntnu.edu/web/ailab/dl_tutorial
 
-![](https://github.com/traai/drl-tutorial/blob/master/images/drl-tutorial.png?raw=true)
+![](https://github.com/traai/drl-tutorial/blob/master/assets/drl-tutorial.png?raw=true)
 
 ## Setting up your machine to run/play with code in this repo
 
@@ -33,6 +33,8 @@ Code accompanying a lecture series on Deep Reinforcement Learning at NTNU: https
 
 ## [Value based methods](https://github.com/traai/drl-tutorial/tree/master/value)
 
+![](https://github.com/traai/drl-tutorial/blob/master/assets/catch.gif?raw=true)
+
 1. Try **another RL environment/problem** with the DQN implementation in `dqn.py` e.g. by changing size of state space for the **catch** problem, or from [OpenAI Gym](https://gym.openai.com/envs/) 
 
 2. Play with the **value network architecture** (e.g. add or reduce layers/layer sizes)
@@ -58,6 +60,9 @@ More hints [here](https://github.com/keon/deep-q-learning/blob/master/ddqn.py), 
 7. Try putting prioritised sampling, dueling architecture, and double DQN learning together!
 
 ## [Policy based methods](https://github.com/traai/drl-tutorial/tree/master/pg)
+
+![](https://github.com/traai/drl-tutorial/blob/master/assets/balance.gif?raw=true)
+
 1. Try **another RL environment/problem** e.g. from [OpenAI Gym](https://gym.openai.com/envs/), with the simple policy gradient algorithm implementation in `pg.py`.
 
 2. Play with the **policy network architecture**.
