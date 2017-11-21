@@ -10,9 +10,9 @@ class ExperienceReplay(object):
         self.max_memory = max_memory
         self.memory = list()
 
-    def add(self, states, game_over):
-        # memory[i] = [[state_t, action_t, reward_t, state_t+1], game_over?]
-        self.memory.append([states, game_over])
+    def add(self, sars_d):
+        # memory[i] = [state_t, action_t, reward_t, state_t+1, game_over?]
+        self.memory.append(sars_d)
         if len(self.memory) > self.max_memory:
             del self.memory[0]
 
@@ -34,7 +34,7 @@ def compute_targets(model, batch, discount=0.9):
     # chain rule of gradient computations would make gradients w.r.t weights 
     # along paths in the network leading to these output action values zero.
     batch_size = len(batch)
-    state_dim = batch[0][0][0].shape[1]
+    state_dim = batch[0][0].shape[1]
     
     num_actions = model.output_shape[-1]
     
@@ -42,8 +42,7 @@ def compute_targets(model, batch, discount=0.9):
     targets = np.zeros((batch_size, num_actions))
     
     for i, sars_d in enumerate(batch):
-        state_t, action_t, reward_t, state_tp1 = sars_d[0]
-        game_over = sars_d[1]
+        state_t, action_t, reward_t, state_tp1, game_over = sars_d
 
         inputs[i] = state_t
         targets[i] = model.predict(state_t)[0]
@@ -112,7 +111,7 @@ if __name__ == "__main__":
                 win_cnt += 1
 
             # Store experience in replay buffer
-            exp_replay.add([input_tm1, action, reward, input_t], game_over)
+            exp_replay.add([input_tm1, action, reward, input_t, game_over])
 
             # Get batch of experiences from replay buffer to train on
             batch = exp_replay.sample_batch(batch_size=batch_size)
