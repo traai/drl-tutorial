@@ -113,7 +113,7 @@ if __name__ == "__main__":
             # Store experience in replay buffer
             exp_replay.add([input_tm1, action, reward, input_t, game_over])
 
-            # Get batch of experiences from replay buffer to train on
+            # Get minibatch of experiences from replay buffer to train on
             batch = exp_replay.sample_batch(batch_size=batch_size)
 
             # Compute targets given the batch
