@@ -1,5 +1,5 @@
 # Tutorial Series on Deep Reinforcement Learning
-Code accompanying a lecture series on Deep Reinforcement Learning at NTNU: https://www.ntnu.edu/web/ailab/dl_tutorial
+Code accompanying a lecture series on Deep Reinforcement Learning at NTNU: http://www.talkingdrums.info/lecture/2017/11/21/drl-series/
 
 ![](https://github.com/traai/drl-tutorial/blob/master/assets/drl-tutorial.png?raw=true)
 
